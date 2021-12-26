@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alfamidia CRUD - Ver:1.4</title>
+    <link rel="stylesheet" href="Alfamidia_CRUD.css">
+</head>
+<body>
+    <header>
+        <h1>Cadastramento</h1>
+    </header>
+    <section>
+        <h1>Dados:</h1>
+        <div id="dados">
+            <table>
+                <tr>
+                    <td align="left">
+                        <label for="ent_nome">Nome:</label>
+                    </td>
+                    <td align="right">
+                        <input type="text" name="ent_nome" id="ent_nome" placeholder="Insira seu nome" maxlength="30" class="inp">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left">
+                        <label for="ent_tel">Telefone:</label>
+                    </td>
+                    <td align="right">
+                        <select name="ent_ddd" id="ent_ddd">
+                            <option value="0" selected disabled>DDD</option>
+                            <option value="11">11</option>
+                            <option value="48">48</option>
+                            <option value="51">51</option>
+                        </select>
+                        <input type="text" class="inp" name="ent_tel" id="ent_tel" placeholder="Insira seu telefone" maxlength="10">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left">
+                        <label for="ent_birth">Nascimento:</label>
+                    </td>
+                    <td align="right">
+                        <input type="date" class="inp" name="ent_birth" id="ent_birth">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left" colspan="2">
+                        <label for="ent_nota">Nota:</label>
+                        <input class="inp" type="text" name="ent_nota" id="ent_nota" maxlength="1" class="inp" placeholder="nota">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center">
+                        <div class="btn-container">
+                            <input type="button" value="Cadastrar" name="btn" class="btn" onclick="Cadastrar()">
+                            <input type="button" value="Remover" name="btn" class="btn" onclick="Remover()">
+                        </div>
+                        <span id="status_msg"></span>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+        <div id="all_outputs">
+            <h1>Cadastros:</h1>
+            <div id="output">
+
+
+            </div>
+        </div>
+    </section>
+
+    <script src="Alfamidia_CRUD.js"></script>
+    <footer>
+        <p>&copy; RRVTI</p>
+    </footer>
+</body>
+</html>

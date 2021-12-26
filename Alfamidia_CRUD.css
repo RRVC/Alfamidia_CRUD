@@ -1,0 +1,119 @@
+table {
+    margin: auto;
+    width: 400px;
+}
+#ent_nome, #ent_tel, #ent_birth {
+    background-color: rgb(187, 187, 187);
+    border-radius: 8px;
+    padding: 3px;
+    text-align: center;
+}
+#ent_nota {
+    width: 50px;
+    background-color: rgb(187, 187, 187);
+    border-radius: 8px;
+    padding: 3px;
+    text-align: center;
+    vertical-align: bottom;
+}
+h1{
+    text-align: center;
+}
+input, select{
+    margin-top: 5px;
+    vertical-align:center;
+    font-weight: bold;
+    align-self: flex-end;
+}
+label {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+select {
+    height: 21px;
+    background-color: rgb(187, 187, 187);
+    border-radius: 5px;
+}
+.btn-container{
+    width: 165px;
+    margin-left: auto; margin-right: auto;
+}
+.btn {
+    padding: 1px 4px 1px 4px;
+    text-align: center;
+    border-radius: 7px;
+    border: solid 1px black;
+    background-color: #1f1e1e;
+    color: red;
+    vertical-align: text-bottom;
+}
+#status_msg {
+    margin-top: 6px;
+    text-align: center;
+    color: red;
+    font-weight: bold;
+    font-size: 15px;
+}
+.btn:hover {
+    background-color: #171717;
+    cursor: pointer;
+    outline: 2px solid red;
+    color: white;
+}
+#ent_nome:focus, #ent_tel:focus, #ent_birth:focus, select:focus, #ent_nota:focus{
+    background-color: #E0E0F8;
+}
+#res2{
+    visibility: hidden;
+    margin-top: 8%;
+    margin-bottom: 2%;
+    height: 250px;
+    overflow: auto;
+    background-color: #E0E0F8;
+    border: solid 2px black;
+}
+#all_outputs {
+    display: none;
+    border-radius: 20px;
+    min-width: fit-content;
+    margin: 15px;
+    padding: 0px 0px 15px 0px;
+    background-color: #262626;
+    border: 1px solid rgb(255, 0, 0);
+    }
+#output{
+    height: 250px;
+    width: 80%;
+    margin: 5px auto;
+    overflow: auto;
+    padding: 15px;
+    border-radius: 20px;
+    background-color: #515151;
+    border: 1px solid #404040;
+}
+
+/* =============================================================================== */
+
+body {
+    background-color: #0d0d0d;
+    font: normal 15pt Arial;
+    color: white;
+}
+header  {
+    text-align: center;
+}
+section {
+    background-color: #262626;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    border-radius: 20px;
+    border: 1px solid rgb(255, 5, 5);
+    box-shadow: 5px 5px red;
+}
+footer {
+    color: rgba(255, 255, 255, 0.300);
+    text-align: center;
+    font-style: italic;
+    font-size: 12px;
+}
